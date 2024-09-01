@@ -4,7 +4,7 @@ A GitHub Action to build and Jekyll sites for deployment.
 This action doesn't publish the site anywhere, later steps are required to publish the site anywhere. This action will install Gems from a Gemfile, which can be cached.
 
 ## Usage
-Use the `lemonarc/jekyll-action` action in your workflow file. The site will be output to `_site`
+Use the `Aizistral-Studios/jekyll-action` action in your workflow file. The site will be output to `_site`
 
 Use the `actions/cache` action in the workflow as well, to shorten build times and decrease load on GitHub's servers
 
@@ -29,7 +29,7 @@ jobs:
           ${{ runner.os }}-gems-
 
     # Standard usage
-    - uses:  lemonarc/jekyll-action@1.0.0
+    - uses:  Aizistral-Studios/jekyll-action@2.0.0
     
     # Example deployment: Push to S3
     - name: Configure AWS credentials
